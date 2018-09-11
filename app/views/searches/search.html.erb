@@ -5,6 +5,7 @@
   <%= submit_tag "Search!" %>
 <% end %>
 <div>
+  <%= session[:token] %>
   <% if @error %>
     <p><%= @error %></p>
   <% elsif @venues %>
